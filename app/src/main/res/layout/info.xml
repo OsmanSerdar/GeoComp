@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nav_info1">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/geocomp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="60dp"
+                android:text="Geodetic Computations"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_marginTop="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="About"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Copyright © Osman Serdar"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="With this app created by Osman SERDAR, you can perform geodetic calculations, such as  coordinate transformations, datum conversions and map sheet finding. If you have any questions or suggestions, please contact me at"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/gmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="geocompapp@gmail.com."
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/design_default_color_primary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Coordinate Transformations"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Geographic to Rectangular"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="In this method you can obtain rectangular coordinates X(m), Y(m), Z(m) by entering the geographic coordinates and selecting an ellipsoid model. Latitude, longitude values must be degree and ellipsoidal height must be meter."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Rectangular to Geographic"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="In this method you can obtain geographic coordinates latitude(degree), longitude(degree), h(m) by entering the rectangular coordinates an selecting an ellipsoid model. X,Y,Z values must be meter."/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Geographic to UTM"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="In this method you can obtain UTM coordinates Easting(m), Northing(m), by entering the geographic coordinates and central meridian, selecting an ellipsoid (GRS80 and WGS84) model and conversion method(3 degree and 6 degree). latitude,longitude and central meridian values must be degree."/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="UTM To Geographic"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="In this method you can obtain geographic coordinates latitude(degree), longitude(degree), by entering the UTM coordinates and central meridian, selecting an ellipsoid (GRS80 and WGS84) model and conversion method(3 degree and 6 degree). Easting, Northing values must be meter and central meridian values must be degree."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Geographic to Rectangular"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="In this method you can obtain rectangular coordinates X(m), Y(m), Z(m) in a text file(GeoMath folder, geographic_to_rectangular.txt file)  by selecting a geographic coordinate file and  an ellipsoid model. File format must be PN(string) Latitude(decimal number), Longitude(decimal number) and ellipsoidal height(decimal number)."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Rectangular to Geographic"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="In this method you can obtain geographic coordinates latitude(deg), longitude(deg), h(m) in a text file (GeoMath folder, rectangular_to_geographic.txt file) by selecting the rectangular coordinates file and an ellipsoid model (GRS80 WGS84).The file  format must be PN(string) X(decimal number),Y(decimal number),Z(decimal number)."/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Geographic to UTM"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="In this method you can obtain UTM coordinates Easting(m), Northing(m) in a text file (GeoMath folder, geographic_to_UTM.txt file), by selecting the geographic coordinates file and an ellipsoid model (GRS80 and WGS84) and conversion method(3 degree and 6 degree). The file format must be PN(string) Latitude(decimal number), Longitude(decimal number) and central meridian(decimal number)."/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="UTM To Geographic"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="In this method you can obtain geographic coordinates latitude(degree), longitude(degree) in a text file (GeoMath folder, UTM_to_geographic.txt file), by selecting the UTM coordinates file and an ellipsoid model(GRS80 and WGS84) and conversion method(3 degree and 6 degree).The file format must be PN(string) Easting(decimal number), Northing(decimal number) and Central meridian(decimal number). "/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Datum Transformations"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="3D WGS84 To ED50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="In this method transform your 3 dimensional WGS84 coordinates(X,Y,Z) which are rectengular coordinates to 3 dimensional ED50 rectegular coordinates, the X,Y,Z values must be meter."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="3D ED50 To WGS84"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="In this method transform your 3 dimensional ED50 coordinates(X,Y,Z) which are rectengular coordinates to 3 dimensional WGS84 rectegular coordinates, the X,Y,Z values must be meter."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Affine Transformation"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="In this method, you can obtain the 2 dimensional  target points converted according to the datum system you want to convert in a txt file(Geomath folder, affine_result.txt file. At least 4 conjugate points are required for this method to work successfully. The conjugate point file format is PN (string) X'(decimal number) Y' (decimal number) X (decimal number) Y (decimal number). The target file format is PN (string) X(decimal number) Y(decimal number).X', Y' are reference points."/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Helmert Trasformation"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="In this method, you can obtain the 2 dimensional target points converted according to the datum system you want to convert in a txt file(Geomath folder, helmert_result.txt file. At least 3 conjugate points are required for this method to work successfully. The conjugate point file format is PN (string) X'(decima number) Y' (decimal number) X (decimal number) Y (decimal number). The target file format is PN (string) X(decimal number) Y(decimal number) .X', Y' are reference points."/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Bursa-Wolf Transforation"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="In this method, you can obtain the 3 dimensional target points converted according to the datum system you want to convert in a txt file(Geomath folder, bursawolf_result.txt file. At least 3 conjugate points are required for this method to work successfully. The conjugate point file format is PN (string) X'(decima number) Y' (decimal number) Z'(decimal number) X (decimal number) Y (decimal number) Z (decimal number). The target file format is PN (string) X(decimal number) Y(decimal number) Z(decimal number).X', Y', Z' are reference points."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="TR Map Sheet Finder"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="In this method you can find your 1/100000, 1/50000, 1/10000, 1/5000, 1/2000, 1/1000 map sheet number by latitude and longitude information and selecting a scale which you wanted to find map sheet number."/>/
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

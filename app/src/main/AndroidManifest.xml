@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.osser.geocomp">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/maps_key" />
+
+        <activity android:name="com.osser.geocomp.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"/>
+            <activity android:name=".TR_map_sheet_finder"
+                      android:label="@string/title_activity_maps"/>
+        <activity android:name=".Button1"/>
+        <activity android:name=".Button2"/>
+        <activity android:name=".ct1"/>
+        <activity android:name=".ct2"/>
+        <activity android:name=".ct3"/>
+        <activity android:name=".ct4"/>
+        <activity android:name=".ct5"/>
+        <activity android:name=".ct6"/>
+        <activity android:name=".ct7"/>
+        <activity android:name=".ct8"/>
+        <activity android:name=".dt3"/>
+        <activity android:name=".dt4"/>
+        <activity android:name=".dt5"/>
+        <activity android:name=".dt6"/>
+        <activity android:name=".dt7"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:id="@+id/nav_home">>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/btn1"
+                android:background="?android:attr/selectableItemBackground"/>
+
+            <Button
+                android:layout_marginTop="110dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/btn2"
+                android:background="?android:attr/selectableItemBackground"/>
+
+            <Button
+                android:layout_marginTop="210dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/btn3"
+                android:background="?android:attr/selectableItemBackground"/>
+
+            <ImageView
+                android:id="@+id/item1"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ct" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="30dp"
+                android:text="Coordinate Transformations"
+                android:textColor="#FDC00F"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="60dp"
+                android:text="You can perform coordinate transformations, such as geographic coordinates to rectangular coordinates."
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/item2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="130dp"
+                android:background="@drawable/dt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="130dp"
+                android:text="Datum Transformations"
+                android:textColor="#FDC00F"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="160dp"
+                android:text="You can perform datum transformations, such as WGS84 to ED50 datum transformation."
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/item3"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="230dp"
+                android:background="@drawable/msf" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="230dp"
+                android:text="TR Map Sheet Finder"
+                android:textColor="#FDC00F"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="260dp"
+                android:text="You can find your paper shit number by latitude and longitude informations."
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

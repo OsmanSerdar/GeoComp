@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_affine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="Conjugate Points"
+        android:textAlignment="viewStart"
+        android:textColor="#ABDFED"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:text="Target Points"
+        android:textAlignment="viewStart"
+        android:textColor="#ABDFED"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/white_border"
+        android:text="CALCULATE"
+        android:textColor="#ABDFED"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/white_border"
+        android:text="CLEAR"
+        android:textColor="#FDC00F"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/white_border"
+        android:gravity="center"
+        android:hint="c_points.txt"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/folder1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@+id/editText1"
+        android:background="@drawable/ic_folder_black_24dp" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/white_border"
+        android:gravity="center"
+        android:hint="t_b_transform.txt"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/folder2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_toRightOf="@+id/editText1"
+        android:background="@drawable/ic_folder_black_24dp" />
+
+</RelativeLayout>

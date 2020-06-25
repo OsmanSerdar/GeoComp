@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:id="@+id/nav_home">>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/btn3"
+                android:background="?android:attr/selectableItemBackground"/>
+
+            <Button
+                android:layout_marginTop="110dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/btn4"
+                android:background="?android:attr/selectableItemBackground"/>
+
+            <Button
+                android:layout_marginTop="210dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/btn5"
+                android:background="?android:attr/selectableItemBackground"/>
+
+            <Button
+                android:layout_marginTop="310dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/btn6"
+                android:background="?android:attr/selectableItemBackground"/>
+
+            <Button
+                android:layout_marginTop="410dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/btn7"
+                android:background="?android:attr/selectableItemBackground"/>
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/item3"
+                android:background="@drawable/dtlist4"/>
+
+            <TextView
+                android:id="@+id/wgs84_ed50_3D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="30dp"
+                android:text="3D WGS84 To ED50"
+                android:textColor="#FDC00F"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="60dp"
+                android:text="You can transforform your 3 dimentional
+WGS84 coordinates to ED50 coordinates"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="120dp"
+                android:id="@+id/item4"
+                android:background="@drawable/dtlist4"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="130dp"
+                android:text="3D ED50 To WGS84"
+                android:textColor="#FDC00F"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="160dp"
+                android:text="You can transforform your 3 dimentional
+ED50 coordinates to WGS84 coordinates"
+                android:textSize="12sp" />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="220dp"
+                android:id="@+id/item5"
+                android:background="@drawable/dtlist5"/>
+
+            <TextView
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="230dp"
+                android:text="Affine Transformation"
+                android:textColor="#FDC00F"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="260dp"
+                android:text="You can transforform your 2 dimentional coordinates with Affine Transformation method"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="320dp"
+                android:id="@+id/item6"
+                android:background="@drawable/dtlist6"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="330dp"
+                android:text="Helmert Transformation"
+                android:textColor="#FDC00F"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="360dp"
+                android:text="You can transforform your 2 dimentional coordinates with Helmert Transformation method"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="420dp"
+                android:id="@+id/item7"
+                android:background="@drawable/dtlist7"/>7
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="430dp"
+                android:text="Bursa-Wolf Transformation"
+                android:textColor="#FDC00F"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="460dp"
+                android:text="You can transforform your 3 dimentional coordinates with Bursa-Wolf Transformation method"
+                android:textSize="12sp" />
+            7
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

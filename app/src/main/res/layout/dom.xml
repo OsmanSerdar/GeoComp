@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_custom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="2dp">
+
+    <ImageButton
+        android:id="@+id/border"
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:src="@drawable/white_border" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/border"
+        android:layout_alignTop="@id/border"
+        android:text="TR Centeral Meridian Table"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/ib_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/border"
+        android:layout_alignRight="@+id/border"
+        android:background="@null"
+        android:src="@drawable/close"/>
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="180dp"
+        android:background="@drawable/dom"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

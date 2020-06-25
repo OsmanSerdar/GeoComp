@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/mapsheetfinder">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_border"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/linear1">>
+
+
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal"
+            android:hint="Latitude" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal"
+            android:hint="Longitude" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/searchicon"
+            android:onClick="onMapSearch"
+            android:text="" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_alignRight="@+id/linear1"
+        android:background="@drawable/white_circle">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="7.5dp"
+        android:layout_marginTop="7.5dp"
+        android:background="@drawable/ic_layers_black_24dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="230dp"
+        android:layout_alignRight="@+id/linear1"
+        android:background="@drawable/white_circle">
+
+    <Button
+        android:id="@+id/golocation"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="7.5dp"
+        android:layout_marginTop="7.5dp"
+        android:background="@drawable/ic_place_black_24dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
